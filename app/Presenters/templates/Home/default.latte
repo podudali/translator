@@ -1,0 +1,50 @@
+{layout '../@layout.latte'}
+
+{block content}
+  <head>
+    <title>Google Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header>
+    </header> 
+    <div id="full_block"> 
+    <div class = "h"><h1><p class = "g">G</p><p class = "t">T</p><p class = "f">F</p><p class = "y">Y</p></h1></div>
+    <!-- FORM SEARCH -->  
+<div class="form">
+    <form name="inputForm" method="POST">
+        <label for="form-search"></label>
+        <input type="text" id="user_message" placeholder="What you want me to translate for you?" name="user_message" value="">
+        <select name="lang" id="lang">
+            <option value="rus">Rus</option>
+            <option value="uzb">Uzb</option>
+            <option value="eng">Eng</option>
+            <option value="cz">Cz</option>
+            <option value="esp">Esp</option>
+            <option value="it">It</option>
+            <option value="fra">Fra</option>
+            <option value="de">De</option>
+            <option value="bra">Bra</option>
+            <option value="chi">Chinese</option>
+            <option value="jpn">Jap</option>
+        </select>
+        {* <button type="submit" id="submit">Перевести</button> *}
+    </form>
+</div>
+{* <div id="translated_message"></div> *}
+
+<h4>Press ENTER for translate</h4>
+
+    <!-- BUTTONS -->
+    {* <div class= "buttons">  
+      <input type="submit" value="Send" id="translator">
+    </div> *}
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+    
+    </footer>      
+  </body>
+{/block}

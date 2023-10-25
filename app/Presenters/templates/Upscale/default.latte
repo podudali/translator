@@ -1,0 +1,14 @@
+{layout '../@layout.latte'}
+
+{block content}
+
+<div class="file-uploader">
+    <form method="post" class="file-uploader__form" enctype="multipart/form-data">
+        <input type="hidden" name="MAX_FILE_SIZE" value="8000000" />
+        <input type="file" name="uploaded_file[]" multiple class="file-uploader__input" />
+        <button type="submit" class="file-uploader__button">Upload</button>
+    </form>
+    <div class="file-uploader__status"></div>
+</div>
+
+{/block}
